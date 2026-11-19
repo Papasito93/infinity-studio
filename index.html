@@ -30,7 +30,7 @@
     #merci.on { display: block; }
     h2 { font-size: 24px; margin: 0 0 18px; letter-spacing: -.3px; }
     section { margin-top: 44px; }
-    .etapes { display: grid; gap: 14px; grid-template-columns: repeat(3, 1fr); }
+    .etapes { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); }
     .etape { background: var(--carte); border: 1px solid var(--ligne); border-radius: 18px; padding: 20px; }
     .num { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--carte2); border: 1px solid var(--ligne); color: var(--or2); font-weight: 700; margin-bottom: 12px; }
     .etape h3 { margin: 0 0 6px; font-size: 17px; }
@@ -66,15 +66,16 @@
         Télécharger pour Windows
       </a>
       <div class="infos">Version <span id="version"></span> · <span id="taille"></span> · Windows 10 et 11</div>
-      <div id="merci">✅ Merci ! Le téléchargement démarre. Suis les 3 étapes juste en dessous.</div>
+      <div id="merci">✅ Merci ! Le téléchargement démarre. Suis les 4 étapes juste en dessous.</div>
     </div>
 
     <section id="etapes">
-      <h2>3 étapes pour commencer</h2>
+      <h2>4 étapes pour commencer</h2>
       <div class="etapes">
-        <div class="etape"><div class="num">1</div><h3>Télécharge</h3><p>Clique sur le bouton. Le fichier arrive dans ton dossier <b>Téléchargements</b>.</p></div>
-        <div class="etape"><div class="num">2</div><h3>Installe</h3><p>Ouvre le fichier. L'installation se fait toute seule et l'appli s'ouvre.</p></div>
-        <div class="etape"><div class="num">3</div><h3>Colle ta clé</h3><p>Au premier lancement, colle ta clé puis clique sur <b>Activer</b>.</p></div>
+        <div class="etape"><div class="num">1</div><h3>Télécharge</h3><p>Clique sur le bouton. Le fichier <b>Infinity-Studio.zip</b> arrive dans ton dossier <b>Téléchargements</b>.</p></div>
+        <div class="etape"><div class="num">2</div><h3>Dézippe</h3><p>Fais un <b>clic droit</b> sur le fichier, puis <b>Extraire tout</b>. Un dossier « Infinity Studio » apparaît.</p></div>
+        <div class="etape"><div class="num">3</div><h3>Ouvre l'appli</h3><p>Dans ce dossier, double-clique sur <b>Infinity Studio</b>. Un raccourci se pose tout seul sur ton Bureau.</p></div>
+        <div class="etape"><div class="num">4</div><h3>Colle ta clé</h3><p>Au premier lancement, colle ta clé puis clique sur <b>Activer</b>.</p></div>
       </div>
     </section>
 
@@ -90,11 +91,11 @@
 
     <section>
       <div class="carte">
-        <h2>Windows affiche un écran bleu ?</h2>
-        <p>C'est normal pour une appli récente. Elle n'est pas encore connue de Windows.</p>
+        <h2>L'appli ne s'ouvre pas ?</h2>
         <ol class="blocage">
-          <li>Clique sur <b>Informations complémentaires</b>.</li>
-          <li>Clique sur <b>Exécuter quand même</b>.</li>
+          <li>Vérifie que tu as bien fait <b>Extraire tout</b>. L'appli ne marche pas si tu l'ouvres depuis l'intérieur du fichier zip.</li>
+          <li>Garde le dossier « Infinity Studio » en entier. Ne déplace pas seulement le fichier de l'appli.</li>
+          <li>Si Windows affiche un écran bleu, clique sur <b>Informations complémentaires</b>, puis sur <b>Exécuter quand même</b>.</li>
         </ol>
       </div>
     </section>
@@ -106,9 +107,9 @@
     // ───── À régler ─────
     // Adresse du fichier d'installation. Tant que le fichier est dans le même dossier que cette page, ne change rien.
     // Une fois le fichier mis en ligne, colle ici son adresse complète (https://…).
-    const LIEN_INSTALLATEUR = 'https://github.com/Papasito93/infinity-studio/releases/latest/download/Infinity-Studio-Setup.exe';
+    const LIEN_INSTALLATEUR = 'https://github.com/Papasito93/infinity-studio/releases/latest/download/Infinity-Studio.zip';
     const VERSION = '1.0.0';
-    const TAILLE = '271 Mo';
+    const TAILLE = '290 Mo';
     const LIEN_FORMATION = 'https://www.skool.com/infinity-studio-6785';
     // ────────────────────
     const bouton = document.getElementById('telecharger');
